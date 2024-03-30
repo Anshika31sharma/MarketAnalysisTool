@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { createChart } from "lightweight-charts";
+import logo from"./Assets/logo.png";
 
 const ChartComponent = () => {
   const chartContainerRef = useRef(null);
@@ -58,7 +59,7 @@ const ChartComponent = () => {
 
     const areaSeries = chartInstance.addAreaSeries({
       topColor: "rgba(255, 0, 0, 0.3)",
-      bottomColor: "rgba(255, 0, 0, 0)",
+      bottomColor: "rgba(255, 0, 0, 0.3)",
       lineWidth: 0,
     });
 
@@ -83,24 +84,19 @@ const ChartComponent = () => {
 
   return (
     <div className="w-full mx-auto max-w-full mt-8 relative">
-    <div className="w-full h-full relative">
-      <div
-        ref={chartContainerRef}
-        className="max-w-3xl"
-        style={{ height: "400px" }}
-      ></div>
-      {/* Image container */}
-      <div className="absolute top-0 mt-80 right-0 z-10 p-2 bg-black h-10 mr-28 lg:mt-80  lg:mr-32">
-        {/* Logo */}
+      <div className="w-full h-full relative">
+        <div
+          ref={chartContainerRef}
+          className=" max-w-3xl"
+          style={{ height: "400px" }}
+        ></div>
         <img
-          className="h-full"
-          src="https://maticalgos.com/wp-content/uploads/2022/01/logo_white.png"
+          className="absolute top-0 z-10 mt-80  right-0 p-2  h-10  lg:mt-80 mr-20 lg:mr-32"
+          src={logo}
           alt="Logo"
         />
       </div>
     </div>
-  </div>
-  
   );
 };
 

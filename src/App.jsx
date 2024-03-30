@@ -4,7 +4,7 @@ import TableComponent from './TableComponent.jsx';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
       <header className="text-center p-5">
         <h1 className="text-2xl font-bold">Drawdown Periods</h1>
       </header>
