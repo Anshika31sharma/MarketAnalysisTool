@@ -86,7 +86,7 @@ const ChartComponent = () => {
       <div className="w-full h-full relative">
         <div
           ref={chartContainerRef}
-          className="w-full h-full"
+          className="w-full"
           style={{ height: "400px" }}
         ></div>
         <img
