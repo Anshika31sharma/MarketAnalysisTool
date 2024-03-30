@@ -90,7 +90,7 @@ const ChartComponent = () => {
           style={{ height: "400px" }}
         ></div>
         <img
-          className="absolute top-0 z-10 right-0 p-2 bg-black h-10 mt-80 mr-32"
+          className="absolute top-0 z-10 right-0 p-2 bg-black h-10 mt-8 lg:mt-80 mr-8 lg:mr-32"
           src="https://maticalgos.com/wp-content/uploads/2022/01/logo_white.png"
           alt="Logo"
         />

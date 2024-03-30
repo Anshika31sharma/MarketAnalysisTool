@@ -52,13 +52,13 @@ const TableComponent = () => {
           <tbody>
             {tableData.map((item, index) => (
               <tr key={index}>
-                <td className="border border-gray-400 px-6 py-3 sm:px-4 sm:py-2">
+                <td className="border border-gray-400 px-6 py-3 sm:px-4 sm:py-2 lg:px-2 lg:py-1">
                   {`${item.Start_Date} - ${item.End_Date}`}
                 </td>
-                <td className="border border-gray-400 px-6 py-3 sm:px-4 sm:py-2">
+                <td className="border border-gray-400 px-6 py-3 sm:px-4 sm:py-2 lg:px-2 lg:py-1">
                   {item.Max_Drawdown}
                 </td>
-                <td className="border border-gray-400 px-6 py-3 sm:px-4 sm:py-2">
+                <td className="border border-gray-400 px-6 py-3 sm:px-4 sm:py-2 lg:px-2 lg:py-1">
                   {item.Trading_days}
                 </td>
               </tr>
